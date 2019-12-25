@@ -1,0 +1,14 @@
+resolver: lts-14.18
+
+packages:
+- '.'
+
+extra-deps:
+- language-dot-0.1.1
+- git: https://github.com/nrolland/ag-graph
+  commit: 3315ac137caf5c7f8698875cbbd6615ea3d60926
+
+flags: {}
+
+extra-package-dbs: []
+

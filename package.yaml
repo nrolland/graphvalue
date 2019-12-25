@@ -1,0 +1,69 @@
+name: graphvalue
+version: '0.1.0.0'
+synopsis: See readme.lhs
+description: See readme.lhs for description.
+category: project
+author: Author name here
+maintainer: example@example.com
+copyright: 2017 Author name here
+license: BSD3
+extra-source-files:
+- stack.yaml
+default-extensions:
+- NoImplicitPrelude
+- UnicodeSyntax
+- BangPatterns
+- BinaryLiterals
+- DeriveFoldable
+- DeriveFunctor
+- DeriveGeneric
+- DeriveTraversable
+- DisambiguateRecordFields
+- EmptyCase
+- FlexibleContexts
+- FlexibleInstances
+- FunctionalDependencies
+- GADTSyntax
+- InstanceSigs
+- KindSignatures
+- LambdaCase
+- MonadComprehensions
+- MultiParamTypeClasses
+- MultiWayIf
+- NegativeLiterals
+- OverloadedStrings
+- ParallelListComp
+- PartialTypeSignatures
+- PatternSynonyms
+- RankNTypes
+- RecordWildCards
+- RecursiveDo
+- ScopedTypeVariables
+- TupleSections
+- TypeFamilies
+- TypeOperators
+ghc-options:
+- -funbox-strict-fields
+- -fforce-recomp
+- -threaded
+- -rtsopts
+- -with-rtsopts=-N
+dependencies:
+- base >=4.7 && <5
+- protolude
+- ag-graph
+- containers
+- language-dot
+- unordered-containers
+- mtl
+- safe
+- vector
+- process
+- filepath
+- directory
+- constraints
+- protolude
+executables:
+  readme:
+    main: readme.hs
+    source-dirs: ./
